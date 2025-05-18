@@ -1,0 +1,141 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+	"files": {
+		"ignore": [
+			".vscode/*",
+			"node_modules/*",
+			"tsconfig.app.json",
+			"tsconfig.node.json",
+			"./server.js",
+			"*.d.ts",
+			"config/*",
+			"vitest.config.ts",
+			"playwright.config.ts",
+			"e2e",
+			".cursorrules",
+			"package.json"
+		]
+	},
+	"formatter": {
+		"lineEnding": "lf",
+		"formatWithErrors": false,
+		"attributePosition": "auto"
+	},
+	"linter": {
+		"enabled": true,
+		"ignore": ["src/__test__/*", ".cursorrules", "package.json", "*.js"],
+		"rules": {
+			"recommended": true,
+			"performance": {
+				"noReExportAll": "error",
+				"useTopLevelRegex": "warn"
+			},
+			"complexity": {
+				"noExcessiveNestedTestSuites": "error",
+				"noUselessCatch": "warn",
+				"noUselessUndefinedInitialization": "error",
+				"useLiteralKeys": "off"
+			},
+			"correctness": {
+				"useExhaustiveDependencies": "off",
+				"useJsxKeyInIterable": "error"
+			},
+			"style": {
+				"noInferrableTypes": "warn",
+				"useNodejsImportProtocol": "off",
+				"noImplicitBoolean": "info",
+				"useNamingConvention": {
+					"level": "error",
+					"options": {
+						"strictCase": false,
+						"conventions": [
+							{
+								"selector": {
+									"kind": "typeParameter"
+								},
+								"formats": ["PascalCase", "camelCase"]
+							},
+							{
+								"selector": {
+									"kind": "variable"
+								},
+								"formats": [
+									"camelCase",
+									"PascalCase",
+									"CONSTANT_CASE",
+									"snake_case"
+								]
+							},
+							{
+								"selector": {
+									"kind": "enumMember"
+								},
+								"formats": ["PascalCase", "CONSTANT_CASE"]
+							},
+							{
+								"selector": {
+									"kind": "objectLiteralProperty"
+								},
+								"formats": [
+									"snake_case",
+									"camelCase",
+									"CONSTANT_CASE",
+									"PascalCase"
+								]
+							},
+							{
+								"selector": {
+									"kind": "typeProperty"
+								},
+								"formats": ["snake_case", "camelCase"]
+							}
+						]
+					}
+				},
+				"useSingleVarDeclarator": "warn",
+				"useTemplate": "warn",
+				"useConsistentBuiltinInstantiation": "error",
+				"noYodaExpression": "warn"
+			},
+			"suspicious": {
+				"noApproximativeNumericConstant": "warn",
+				"noConsole": "error",
+				"noDuplicateObjectKeys": "warn",
+				"useAwait": "error",
+				"useErrorMessage": "error"
+			},
+			"a11y": {
+				"noInteractiveElementToNoninteractiveRole": "warn",
+				"useButtonType": "info",
+				"useSemanticElements": "off",
+				"useKeyWithClickEvents": "off",
+				"useValidAnchor": "off",
+				"useFocusableInteractive": "off",
+				"useValidLang": "error"
+			},
+			"nursery": {
+				"noNestedTernary": "error",
+				"noRestrictedImports": "error",
+				"noIrregularWhitespace": "error",
+				"noUselessEscapeInRegex": "warn",
+				"useConsistentCurlyBraces": "error",
+				"useGoogleFontDisplay": "error"
+			}
+		}
+	},
+	"javascript": {
+		"jsxRuntime": "reactClassic",
+		"globals": [
+			"vitest",
+			"jest",
+			"describe",
+			"it",
+			"beforeAll",
+			"afterAll",
+			"beforeEach",
+			"afterEach",
+			"test",
+			"expect"
+		]
+	}
+}

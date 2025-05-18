@@ -108,7 +108,7 @@ export default function Home() {
 				<ul className="">
 					<li>
 						<a
-							href="https://github.com/craftzdog"
+							href="https://github.com/techntv"
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -121,7 +121,7 @@ export default function Home() {
 
 					<li>
 						<a
-							href="https://twitter.com/craftzdog"
+							href="https://twitter.com/devgen"
 							target="_blank"
 							rel="noreferrer"
 						>
@@ -133,7 +133,7 @@ export default function Home() {
 					</li>
 					<li>
 						<a
-							href="https://instagram.com/craftzdog"
+							href="https://instagram.com/devgen"
 							target="_blank"
 							rel="noreferrer"
 						>

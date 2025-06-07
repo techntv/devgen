@@ -17,18 +17,24 @@ const Navbar = () => {
 				>
 					Projects
 				</Link>
-				<a
+				{/* <a
 					href="#skills"
 					className="btn btn-ghost btn-sm normal-case text-base"
 				>
 					Skills
-				</a>
-				{/* <Link
-					href="/uses"
+				</a> */}
+					{/* <Link
+						href="/uses"
+						className="btn btn-ghost btn-sm normal-case text-base"
+					>
+						Uses
+					</Link> */}
+				<Link
+					href="/contact"
 					className="btn btn-ghost btn-sm normal-case text-base"
 				>
-					Uses
-				</Link> */}
+					Contact
+				</Link>
 			</div>
 		</nav>
 	);

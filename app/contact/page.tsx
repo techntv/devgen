@@ -9,14 +9,12 @@ export default function Contact() {
         Feel free to reach out for collaboration, project inquiries, or just to connect!
       </p>
       <div className="flex flex-row gap-6 items-center justify-center">
-        {/* Email */}
         <a
           href="mailto:vinhnguyen.dev@gmail.com"
           className="flex items-center gap-4 px-6 py-4 rounded-lg bg-[#323234] hover:bg-[#2d2d2f] transition text-white shadow"
         >
           <HiOutlineMail className="w-7 h-7 text-teal-400" />
         </a>
-        {/* GitHub */}
         <a
           href="https://github.com/techntv"
           target="_blank"
@@ -25,7 +23,6 @@ export default function Contact() {
         >
           <IoLogoGithub className="w-7 h-7 text-teal-400" />
         </a>
-        {/* LinkedIn */}
         <a
           href="https://www.linkedin.com/in/vinhnguyen-dev/"
           target="_blank"

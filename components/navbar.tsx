@@ -23,6 +23,12 @@ const Navbar = () => {
 				>
 					Contact
 				</Link>
+				<Link
+					href="/about"
+					className="btn btn-ghost btn-sm normal-case text-base"
+				>
+					About
+				</Link>
 			</div>
 		</nav>
 	);

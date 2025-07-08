@@ -163,13 +163,15 @@ export default function About() {
           <Link
             href="/contact"
             className="inline-flex items-center px-6 py-3 bg-teal-600 text-white rounded-lg font-semibold shadow hover:bg-teal-700 transition"
+            aria-label="Contact Vinh Nguyen"
           >
             <HiOutlineMail className="mr-2" />
-            Get in touch
+            Contact me
           </Link>
           <Link
             href="/projects"
             className="inline-flex items-center px-6 py-3 bg-[#323234] text-white rounded-lg font-semibold shadow hover:bg-[#2d2d2f] transition"
+            aria-label="View Vinh Nguyen's work"
           >
             View my work
           </Link>
